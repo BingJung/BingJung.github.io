@@ -1,1 +1,0 @@
-runas /user:Administrator ./update.ps1
