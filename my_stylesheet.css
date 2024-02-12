@@ -47,11 +47,13 @@ div.content {
 }
 h1, h2, h3 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0.8px;
 }
 a, p {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 109%;
-    line-height: 1.4;
+    font-family: 'Trebuchet MS', Georgia, 'Times New Roman', Times, serif;
+    font-size: 110%;
+    line-height: 1.5;
+    letter-spacing: 0.4px;
 }
 
 /* footer {
