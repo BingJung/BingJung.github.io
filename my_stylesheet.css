@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+header.nav_header {
+    background-color: #0e1a22;
+    color: #f2f2f2;
+    padding: 20px;
+    text-align: end;
+    width: "width=device-width";
+    font-family: "Trebuchet MS";
+}
+/* nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+} */
+nav a {
+    color: #f2f2f2;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+nav a:hover {
+    background-color: #04080a;
+}
+main {
+    padding: 20px;
+}
+a {
+    color: #0e1a22
+}
+img.my_face {
+    width: 400px;
+    max-width: 96%;
+    margin: 2%
+}
+div.content {
+    max-width: 800px;
+}
+@media print, screen and (min-width: 800px) {
+    div.me {
+        display: flex;
+        align-items: center;
+    }
+}
+/* footer {
+    background-color: #0e1a22;
+    color: #fff;
+    text-align: center;
+    padding: 0px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+} */

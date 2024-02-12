@@ -4,110 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bingjun Guo</title>
-    <style>
-        /* CSS styles can be added here */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f2f2f2;
-        }
-        header {
-            background-color: #0e1a22;
-            color: #f2f2f2;
-            padding: 20px;
-            text-align: end;
-            width: "width=device-width";
-            font-family: "Trebuchet MS";
-        }
-        a {
-            color: #0e1a22
-        }
-        /* nav {
-            display: flex;
-            justify-content: center;
-            margin-top: 0px;
-        } */
-        nav a {
-            color: #f2f2f2;
-            text-decoration: none;
-            padding: 10px 20px;
-        }
-        nav a:hover {
-            background-color: #04080a;
-        }
-        main {
-            padding: 20px;
-        }
-        table {
-            width: 900px;
-        }
-        @media (min-width: 830px) {
-            img.my_face {
-                width: 400px;
-            }
-            td.my_face_box {
-                width: 425px;
-            }
-            .content {
-                width: 800px;
-            }
-        }
-        @media (max-width: 829px) {
-            img.my_face {
-                width: 200px;
-            }
-            td.my_face_box {
-                width: 225px;
-            }
-        }
-    
-        /* footer {
-            background-color: #0e1a22;
-            color: #fff;
-            text-align: center;
-            padding: 0px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        } */
-    </style>
+    <link rel="stylesheet" href="my_stylesheet.css">
 </head>
+
 <body>
 
-<header>
+<header class="nav_header">
     <nav>
-        <a href = bbbingjun_guo.pdf>Academic Resume</a>
+        <a href = bbbingjun_guo.pdf>My Academic Resume</a>
     </nav>
 </header>
 
-<main>
-    <table>
-        <tr>
-            <td class="my_face_box">
-                <img class="my_face", src="bbbingjun_guo.jpg" alt="a normal face of mine" title="shot in Shanghai by my brother who was 10 years old">
-            </td>
-            <td>
-                <h1>
-                    Bingjun Guo 
-                    <span lang="zh-cn">郭柄君</span> 
-                </h1>
-                <p>
-                    Undergraduate<br>
-                    <a href="https://zjui.intl.zju.edu.cn/en"
-                    title="ZJU-UIUC Institute">
-                        ZJU-UIUC Institute
-                    </a><br>
-                    <span>bingjun3[at]illinois.edu</span>
-                    <span>bingjun.21[at]intl.zju.edu.cn</span>
-                <p>
-            </td>
-        </tr>
-    </table>
+<div class="me">
+    <img src="bbbingjun_guo.jpg" class="my_face" alt="a normal face of mine" title="shot in Shanghai by my brother who was 10 years old">
+    <div style="margin-left:4%;">
+        <h1>
+            Bingjun Guo 
+            <span lang="zh-cn">郭柄君</span> 
+        </h1>
+        <p>
+            <p>Undergraduate</p>
+            <a href="https://zjui.intl.zju.edu.cn/en" title="ZJU-UIUC Institute"> ZJU-UIUC Institute</a>
+            <p>bingjun3[at]illinois.edu / bingjun.21[at]intl.zju.edu.cn</p>
+        <p>
+    </div>
+</div>
 
+<main>
         <div class="content">
             <h2>Hallo!</h2>
-            <p>I'm Bingjun Guo, an undergraduate student from ZJU-UIUC Institute majoring in Computer Engineering. With the support of both my solid engineering literacy and great passion in science, my research interests mainly focus on machine learning and data science. The final aim of my research would be improving the mode of production and education for the broad society with reinforced artificial intelligence. Currently, I am on UIUC campus for the junior year of my undergraduate study. More information about me will be updated soon (hopefully).</p>
+            <p>I'm Bingjun Guo, an undergraduate student from ZJU-UIUC Institute majoring in Computer Engineering. With the support of both my great passion in science and solid engineering literacy, my research interests mainly focus on machine learning and data science. The final aim of my research would be improving the mode of production and education for the broad society with reinforced artificial intelligence. Currently, I am on UIUC campus for the junior year of my undergraduate study. More information about me will be updated soon (hopefully).</p>
         </div>
     
         <div class="content">
@@ -118,8 +44,9 @@
 </main>
 
 <!-- <footer>
-    <p>&copy; This is a trial for LLM generated html framework. Adequate information will be added soon.</p>
+    <p>&copy; hahaha. </p>
 </footer> -->
 
 </body>
+
 </html>
