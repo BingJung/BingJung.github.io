@@ -38,14 +38,30 @@
         }
         main {
             padding: 20px;
-            width: 900px;
         }
         table {
-            width: "width=device-width";
+            width: 900px;
         }
-        image {
-            width: "width=device-width"
+        @media (min-width: 830px) {
+            img.my_face {
+                width: 400px;
+            }
+            td.my_face_box {
+                width: 425px;
+            }
+            .content {
+                width: 800px;
+            }
         }
+        @media (max-width: 829px) {
+            img.my_face {
+                width: 200px;
+            }
+            td.my_face_box {
+                width: 225px;
+            }
+        }
+    
         /* footer {
             background-color: #0e1a22;
             color: #fff;
@@ -68,8 +84,8 @@
 <main>
     <table>
         <tr>
-            <td width="425">
-                <img src="bbbingjun_guo.jpg" width="400" alt="a normal face of mine" title="shot in Shanghai by my brother who was 10 years old">
+            <td class="my_face_box">
+                <img class="my_face", src="bbbingjun_guo.jpg" alt="a normal face of mine" title="shot in Shanghai by my brother who was 10 years old">
             </td>
             <td>
                 <h1>
@@ -82,18 +98,19 @@
                     title="ZJU-UIUC Institute">
                         ZJU-UIUC Institute
                     </a><br>
-                    bingjun3[at]illinois.edu / bingjun.21[at]intl.zju.edu.cn
+                    <span>bingjun3[at]illinois.edu</span>
+                    <span>bingjun.21[at]intl.zju.edu.cn</span>
                 <p>
             </td>
         </tr>
     </table>
 
-        <div>
+        <div class="content">
             <h2>Hallo!</h2>
             <p>I'm Bingjun Guo, an undergraduate student from ZJU-UIUC Institute majoring in Computer Engineering. With the support of both my solid engineering literacy and great passion in science, my research interests mainly focus on machine learning and data science. The final aim of my research would be improving the mode of production and education for the broad society with reinforced artificial intelligence. Currently, I am on UIUC campus for the junior year of my undergraduate study. More information about me will be updated soon (hopefully).</p>
         </div>
     
-        <div>
+        <div class="content">
             <h2>Course Work Threads</h2>
             <p>In this section I'm going to introduce the courses that I have taken, following a couple of critical disciplines which will probably play critical roles in my future research work. I will also demonstrate how they inspired me with brand-new viewpoints to inspect the world, as well as how I feel about my participation in these courses. (hopefully this page won't be caught by the professors)</p>
             <h3>to be cont.</h3>
