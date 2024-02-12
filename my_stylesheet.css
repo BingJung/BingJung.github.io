@@ -37,7 +37,7 @@ img.my_face {
     margin: 2%
 }
 div.content {
-    max-width: 800px;
+    max-width: 900px;
 }
 @media print, screen and (min-width: 800px) {
     div.me {
@@ -50,8 +50,8 @@ h1, h2, h3 {
 }
 a, p {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: large;
-    line-height: 1.5;
+    font-size: 109%;
+    line-height: 1.4;
 }
 
 /* footer {
