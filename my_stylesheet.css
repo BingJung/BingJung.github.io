@@ -34,14 +34,21 @@ nav ul{
 }
 nav li.main{
     float: inline-start;
+}
+nav li.main a{
     font-weight: bold;
-    font-size: 13pt;
+    font-size: 19pt;
+    padding-inline-start: 0;
+    padding-bottom: 0;
+    padding-top: 6px;
 }
 nav li.section a:hover{
     background-color: #04080a;
 }
+nav li.resume a:hover{
+    background-color: #04080a;
+}
 nav li a{
-    text-align: middle;
     float: right;
     padding: 12px 16px;
 }
@@ -115,6 +122,9 @@ img.icon{
         max-width: 96%;
         float: left;
         margin-bottom: 3.2%;
+    }
+    nav li.section{
+        display: none;
     }
 }
 
