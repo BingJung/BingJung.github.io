@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Popup Menu with Animation</title>
+<style>
+    .popup-menu {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 150px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+    }
+    
+    .popup-menu.show {
+        display: block;
+        animation: fadeIn 0.3s ease-in-out;
+    }
+    
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+    
+    .popup-menu-item {
+        cursor: pointer;
+        padding: 8px 0;
+    }
+    
+    .popup-menu-item:hover {
+        background-color: #ddd;
+    }
+</style>
+</head>
+<body>
+
+<div id="popupMenu" class="popup-menu">
+    <div class="popup-menu-item">Item 1</div>
+    <div class="popup-menu-item">Item 2</div>
+    <div class="popup-menu-item">Item 3</div>
+</div>
+
+<button onclick="toggleMenu()">Open Popup Menu</button>
+
+<script>
+    function toggleMenu() {
+        var menu = document.getElementById("popupMenu");
+        menu.classList.toggle("show");
+    }
+    
+    window.onclick = function(event) {
+        var menu = document.getElementById("popupMenu");
+        if (event.target != menu && !menu.contains(event.target)) {
+            menu.classList.remove("show");
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,59 +1,91 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
     background-color: #f2f2f2;
 }
 header{
     background-color: #0e1a22;
     color: #f2f2f2;
-    padding: 20px;
+    padding: 25px;
     text-align: end;
     width: "width=device-width";
 }
-/* nav {
-    display: flex;
-    justify-content: center;
-    margin-top: 0px;
-} */
 nav a {
     color: #f2f2f2;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 10px 15px;
     font-family: "Trebuchet MS";
+    font-size: large;
 }
 nav a:hover {
     background-color: #04080a;
 }
 main {
-    padding: 20px;
+    margin-left: 5%;
+    margin-right: 1.6%;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
 }
 a {
-    color: #0e1a22
+    color: #ae7711
 }
-img.my_face {
+p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 125%;
+    line-height: 1.5;
+    letter-spacing: 0.45px;
+}
+.me {
+    max-width: 850px;
+}
+.me img {
+    width: 400px;
+    max-width: 96%;
+    margin-right: 3.2%;
+    float: left;
+}
+.me h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 36pt;
+    margin-bottom: 0;
+}
+
+/* img.my_face {
     width: 400px;
     max-width: 96%;
     margin: 2%
 }
-div.content {
-    max-width: 900px;
+p.infm {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
 }
-@media print, screen and (min-width: 800px) {
-    div.me {
-        display: flex;
-        align-items: center;
-    }
+p.infm a{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+} */
+.section {
+    max-width: 850px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-h1, h2, h3 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    letter-spacing: 0.6px;
-}
-a, p {
-    font-family: 'Trebuchet MS', Georgia, 'Times New Roman', Times, serif;
-    font-size: 110%;
-    line-height: 1.5;
+.section h1, h2, h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     letter-spacing: 0.4px;
+    font-size: xx-large;
+}
+@media print, screen and (max-width: 800px) {
+    .me img {
+        width: 400px;
+        max-width: 96%;
+        float: left;
+    }
+    .me img {
+        width: 400px;
+        max-width: 96%;
+        float: left;
+        margin-bottom: 3.2%;
+    }
 }
 
 /* footer {
