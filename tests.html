@@ -3,60 +3,80 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Popup Menu with Animation</title>
+<title>Expanding Menu</title>
 <style>
-    .popup-menu {
-        display: none;
-        position: absolute;
-        background-color: #f9f9f9;
-        min-width: 150px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        padding: 12px 16px;
-        z-index: 1;
+    /* Style for menu container */
+    .menu {
+        list-style-type: none;
+        padding: 0;
     }
-    
-    .popup-menu.show {
-        display: block;
-        animation: fadeIn 0.3s ease-in-out;
-    }
-    
-    @keyframes fadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
-    }
-    
-    .popup-menu-item {
+
+    /* Style for menu items */
+    .menu-item {
+        padding: 10px;
+        background-color: #f2f2f2;
+        border-bottom: 1px solid #ddd;
         cursor: pointer;
-        padding: 8px 0;
     }
-    
-    .popup-menu-item:hover {
-        background-color: #ddd;
+
+    /* Style for sub-menu items */
+    .sub-menu {
+        display: none;
+        list-style-type: none;
+        padding: 0;
+        margin-left: 20px; /* Indent sub-menu items */
+    }
+
+    /* Style for sub-menu item */
+    .sub-menu-item {
+        padding: 8px 0;
+        cursor: pointer;
     }
 </style>
 </head>
 <body>
 
-<div id="popupMenu" class="popup-menu">
-    <div class="popup-menu-item">Item 1</div>
-    <div class="popup-menu-item">Item 2</div>
-    <div class="popup-menu-item">Item 3</div>
-</div>
-
-<button onclick="toggleMenu()">Open Popup Menu</button>
+<ul class="menu">
+    <li class="menu-item">Menu Item 1
+        <ul class="sub-menu">
+            <li class="sub-menu-item">Sub Menu Item 1</li>
+            <li class="sub-menu-item">Sub Menu Item 2</li>
+            <li class="sub-menu-item">Sub Menu Item 3</li>
+        </ul>
+    </li>
+    <li class="menu-item">Menu Item 2
+        <ul class="sub-menu">
+            <li class="sub-menu-item">Sub Menu Item 1</li>
+            <li class="sub-menu-item">Sub Menu Item 2</li>
+            <li class="sub-menu-item">Sub Menu Item 3</li>
+        </ul>
+    </li>
+    <li class="menu-item">Menu Item 3
+        <ul class="sub-menu">
+            <li class="sub-menu-item">Sub Menu Item 1</li>
+            <li class="sub-menu-item">Sub Menu Item 2</li>
+            <li class="sub-menu-item">Sub Menu Item 3</li>
+        </ul>
+    </li>
+</ul>
 
 <script>
-    function toggleMenu() {
-        var menu = document.getElementById("popupMenu");
-        menu.classList.toggle("show");
-    }
-    
-    window.onclick = function(event) {
-        var menu = document.getElementById("popupMenu");
-        if (event.target != menu && !menu.contains(event.target)) {
-            menu.classList.remove("show");
-        }
-    }
+    // Get all menu items
+    var menuItems = document.querySelectorAll('.menu-item');
+
+    // Loop through each menu item
+    menuItems.forEach(function(item) {
+        // Add click event listener to each menu item
+        item.addEventListener('click', function() {
+            // Toggle display of sub-menu on click
+            var subMenu = item.querySelector('.sub-menu');
+            if (subMenu.style.display === 'none') {
+                subMenu.style.display = 'block';
+            } else {
+                subMenu.style.display = 'none';
+            }
+        });
+    });
 </script>
 
 </body>

@@ -7,18 +7,32 @@ header{
     background-color: #0e1a22;
     color: #f2f2f2;
     padding: 25px;
-    text-align: end;
     width: "width=device-width";
+}
+nav{
+    color: #f2f2f2;
+    font-family: "Trebuchet MS";
+    font-size: large;
 }
 nav a {
     color: #f2f2f2;
     text-decoration: none;
     padding: 10px 15px;
-    font-family: "Trebuchet MS";
-    font-size: large;
 }
-nav a:hover {
+nav.mainpage{
+    text-align: end;
+}
+nav.mainpage a:hover {
     background-color: #04080a;
+}
+nav.subpages a {
+    color: #f2f2f2;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+nav.subpages a:hover {
+    color: #ae7711
 }
 main {
     margin-left: 5%;
@@ -28,11 +42,23 @@ main {
     display: flex;
     justify-content: center;
 }
+::selection {
+    background-color: #04080a;
+    color: #f2f2f2;
+}
 a {
     color: #ae7711
 }
+a.selfref{
+    color: #04080a;
+    text-decoration: none;
+}
+a.selfref:hover{
+    color: #ae7711;
+}
 p {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    /* Other two fancy fonts: Cambria, Cochin */
     font-size: 125%;
     line-height: 1.5;
     letter-spacing: 0.45px;
@@ -47,39 +73,28 @@ p {
     float: left;
 }
 .me h1{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Georgia, Times, 'Times New Roman', serif;
     font-size: 36pt;
     margin-bottom: 0;
 }
-
-/* img.my_face {
-    width: 400px;
-    max-width: 96%;
-    margin: 2%
+.contact{
+    color: #505050;
+    text-align: end;
+    margin-right: 1.6%;
 }
-p.infm {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: large;
+img.icon{
+    width: 32px;
 }
-p.infm a{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: large;
-} */
 .section {
     max-width: 850px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .section h1, h2, h3 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Georgia, Times, 'Times New Roman', serif;
     letter-spacing: 0.4px;
     font-size: xx-large;
 }
-@media print, screen and (max-width: 800px) {
-    .me img {
-        width: 400px;
-        max-width: 96%;
-        float: left;
-    }
+@media print, screen and (max-width: 653px) {
     .me img {
         width: 400px;
         max-width: 96%;
