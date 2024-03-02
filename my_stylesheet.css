@@ -9,12 +9,6 @@ header{
     padding: 15px;
     width: "width=device-width";
 }
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
 nav{
     color: #f2f2f2;
     font-family: Cambria, Georgia, Times, 'Times New Roman', serif;
@@ -29,13 +23,19 @@ nav a {
 nav a:hover {
     color: #ae7711
 }
-nav.mainpage{
-    text-align: end;
+nav.mainpagenav{
+    text-align: inline-end;
     font-family: Trebuchet MS;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
 }
 nav li.main{
     float: inline-start;
     font-weight: bold;
+    font-size: 13pt;
 }
 nav li.section a:hover{
     background-color: #04080a;
@@ -51,8 +51,10 @@ nav li a{
 main {
     margin-left: 5%;
     margin-right: 1.6%;
+    max-width: 850px;
 }
 .wrapper {
+    /* a wrapper is not aligning to the center and limiting the width at the same time */
     display: flex;
     justify-content: center;
 }
@@ -76,9 +78,9 @@ p {
     line-height: 1.5;
     letter-spacing: 0.45px;
 }
-.me {
+/* .me {
     max-width: 850px;
-}
+} */
 .me img {
     width: 400px;
     max-width: 96%;
@@ -99,7 +101,7 @@ img.icon{
     width: 32px;
 }
 .section {
-    max-width: 850px;
+    /* max-width: 850px; */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .section h1, h2, h3 {
