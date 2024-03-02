@@ -29,7 +29,7 @@ nav.subpages a {
     color: #f2f2f2;
     text-decoration: none;
     padding: 10px 15px;
-    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Georgia, Times, 'Times New Roman', serif;
 }
 nav.subpages a:hover {
     color: #ae7711
@@ -57,8 +57,7 @@ a.selfref:hover{
     color: #ae7711;
 }
 p {
-    font-family: Georgia, Times, 'Times New Roman', serif;
-    /* Other two fancy fonts: Cambria, Cochin */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 125%;
     line-height: 1.5;
     letter-spacing: 0.45px;
@@ -73,7 +72,7 @@ p {
     float: left;
 }
 .me h1{
-    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Georgia, Times, 'Times New Roman', serif;
     font-size: 36pt;
     margin-bottom: 0;
 }
