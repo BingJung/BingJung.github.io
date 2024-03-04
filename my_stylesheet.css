@@ -62,8 +62,6 @@ main {
     /* a wrapper is not aligning to the center and limiting the width at the same time */
     padding: 0;
     margin-top: 29px;
-    display: flex;
-    flex-direction: column;
     max-width: 850px;
 } 
 ::selection {
@@ -98,9 +96,6 @@ p {
     p{
         font-size: 111%;
     }
-    .me{
-        margin-bottom: 5%;
-    }
     .me img {
         width: auto;
         float: left;
@@ -132,11 +127,11 @@ p {
 /*
 img.icon{
     width: 32px;
-} 
-.section {
-    max-width: 850px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 } */
+.section{
+    margin-top: 6%;
+    margin-bottom: 5%;
+}
 .section h1, h2, h3 {
     letter-spacing: 0.4px;
     font-size: xx-large;
