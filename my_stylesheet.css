@@ -4,6 +4,10 @@ body {
     margin: 0 auto;
     background-color: #f2f2f2;
 }
+::selection {
+    background-color: #04080a;
+    color: #f2f2f2;
+}
 header{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #0e1a22;
@@ -58,21 +62,17 @@ main {
     display: flex;
     justify-content: center;
 }
-.wrapper {
+div.wrapper {
     /* a wrapper is not aligning to the center and limiting the width at the same time */
     padding: 0;
     margin-top: 29px;
-    max-width: 850px;
+    max-width: 800px;
 } 
-::selection {
-    background-color: #04080a;
-    color: #f2f2f2;
-}
 a{
     color: #04080a;
 }
 p {
-    font-size: 125%;
+    font-size:120%;
     line-height: 1.5;
     letter-spacing: 0.45px;
 }
@@ -86,16 +86,13 @@ p {
     float: left;
 }
 .me h1{
-    font-size: 36pt;
+    font-size: 33pt;
     margin: 0;
 }
 .me p{
     margin: 0;
 }
 @media print, screen and (max-width: 653px) {
-    p{
-        font-size: 111%;
-    }
     .me img {
         width: auto;
         float: left;
@@ -103,7 +100,7 @@ p {
         margin: 0;
     }
     .me h1{
-        font-size: 41pt;
+        font-size: 39pt;
         margin-bottom: 0;
     }
     nav li.section{
@@ -128,22 +125,25 @@ p {
 img.icon{
     width: 32px;
 } */
-.section{
-    margin-top: 6%;
-    margin-bottom: 5%;
+div.main_page_section{
+    margin-top: 4%;
+    margin-bottom: 4%;
 }
-.section h1, h2, h3 {
+div.main_page_section h1, h2, h3 {
     letter-spacing: 0.4px;
     font-size: xx-large;
 }
-.section a.section{
+div.main_page_section a.section{
     text-decoration: none;
 }
-.section a.section:hover{
+div.main_page_section a.section:hover{
     /* note that a:hover will not affect a.class */
     color: #ae7711;
 }
-.courses {
+div.intro{
+    margin-bottom: 6%;
+}
+div.courses {
     border-color: #04080a;
     border-style: solid;
     border-radius: 9px;
@@ -152,14 +152,14 @@ img.icon{
     margin-bottom: 4.1%;
     max-width: 93%;
 }
-.courses h2{
+div.courses h2{
     margin: 1.9%;
     margin-top: 12px;
 }
-.courses .group{
+div.courses .group{
     display: flex;
 }
-.courses ul{
+div.courses ul{
     margin-top: 0;
 }
 /* .courseth h2 span.time{
