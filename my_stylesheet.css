@@ -72,7 +72,7 @@ a{
     color: #04080a;
 }
 p {
-    font-size:120%;
+    font-size: 120%;
     line-height: 1.5;
     letter-spacing: 0.45px;
 }
@@ -113,11 +113,12 @@ p {
 .contact{
     color: #494949;
     text-align: right;
+    font-family: Georgia, Times, 'Times New Roman', serif;
     font-style: italic;
     font-size: large;
     /* margin-top: 1.4%;
     margin-bottom: 3.6%; */
-    margin-top: 2px;
+    margin-top: 4.1px;
     margin-bottom: 14px;
     margin-right: 1.9%;
 }
@@ -125,25 +126,39 @@ p {
 img.icon{
     width: 32px;
 } */
-div.main_page_section{
+.main_page_section{
     margin-top: 4%;
     margin-bottom: 4%;
 }
-div.main_page_section h1, h2, h3 {
+.main_page_section h1, h2, h3 {
     letter-spacing: 0.4px;
     font-size: xx-large;
+    margin-bottom: 1.4%;
 }
-div.main_page_section a.section{
+.main_page_section p{
+    margin: 0;
+}
+.main_page_section a.section{
     text-decoration: none;
 }
-div.main_page_section a.section:hover{
+.main_page_section a.section:hover{
     /* note that a:hover will not affect a.class */
     color: #ae7711;
 }
-div.intro{
-    margin-bottom: 6%;
+.intro{
+    margin-bottom: 5.2%;
 }
-div.courses {
+.intro p{
+    font-size: large;
+    margin-top: 0;
+    color: #494949;
+}
+.intro blockquote{
+    margin-top: 0;
+    font-size: medium;
+    color:#494949;
+}
+.courses {
     border-color: #04080a;
     border-style: solid;
     border-radius: 9px;
@@ -152,15 +167,26 @@ div.courses {
     margin-bottom: 4.1%;
     max-width: 93%;
 }
-div.courses h2{
+.courses h2{
     margin: 1.9%;
     margin-top: 12px;
 }
-div.courses .group{
+.courses .group{
     display: flex;
 }
-div.courses ul{
+.courses ul{
     margin-top: 0;
+    margin-bottom: 2.4%;
+    color: #494949;
+}
+.courses .course-title:hover{
+    color: #ae7711;
+}
+.courses .course-hidden{
+    margin-left: 3.2%;
+}
+.courses .course-hidden p{
+    margin: 0;
 }
 /* .courseth h2 span.time{
     font-size: large;
@@ -169,8 +195,38 @@ div.courses ul{
     font-weight: normal;
     font-style: italic;
 } */
+li.course{
+    font-size: large;
+    line-height: 1.4;
+}
 li.course a:hover{
     color: #ae7711;
+}
+.babbling h2{
+    font-size: x-large;
+}
+.babbling .time{
+    text-align: end;
+    color: #494949;
+    font-size: large;
+    margin-top: 3.6%;
+    margin-bottom: 4%;
+    font-style: italic;
+}
+.babbling .quote{
+    text-indent: 4.9%;
+    margin-left: 4%;
+    color: #494949;
+    font-size: large;
+    font-style: italic;
+}
+.babbling .from{
+    text-align: end;
+    color: #494949;
+    font-size: large;
+    font-style: italic;
+    margin-top: 0.9%;
+    margin-bottom: 2.4%;
 }
 /* footer {
     background-color: #0e1a22;

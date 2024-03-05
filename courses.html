@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bingjun Guo</title>
+    <title>Course Work Threads | Bingjun Guo</title>
     <link rel="stylesheet" href="my_stylesheet.css">
 </head>
 
@@ -14,7 +14,7 @@
         <ul>
             <li class="main"><a href = "index.html">Bingjun Guo</a></li>
             <li class="section"><a href = "acknowledgements.html">Acks</a></li>
-            <li class="section"><a href = "babblings.html">Babblings</a></li>
+            <li class="section"><a href = "babbling.html">Babblings</a></li>
             <li class="section"><a href = "projects.html">Projects</a></li>
         </ul>
     </nav>
@@ -23,11 +23,13 @@
 <main>
 <div class="wrapper">
     <div class="intro">
-        <h1>Course Work Threads</h1>
-        <p>Here I'm going to introduce courses that I have taken following several critical disciplines. I will also demonstrate how they inspired me with brand-new viewpoints to inspect the world, as well as how I feel about my participation in these courses (hopefully this page won't be caught by the professors). Again, feel free to <strong>click on titles</strong> to view more.</p>
+        <h2>Course Work Threads</h1>
+        <p>
+            Here I'm going to introduce courses that I have taken following several critical disciplines. I will also demonstrate how they inspired me with brand-new viewpoints to inspect the world, as well as how I feel about my participation in these courses. <span style="color: black;">Actually, blocks below are in descending order in which they somehow got in my mind, and again, please feel free to <strong>click on the blocks</strong> for more.</span>
+        </p>
     </div>
     <div class="courses">
-        <h2>Brain functionalities & ML</h2>
+        <h2 class="course-title">Brain functionalities & ML</h2>
         <div class="group">
             <ul>
                 <li class="course">Neural Circuits and Systems (ECE/NE 410)</li>
@@ -38,11 +40,18 @@
             <ul style="margin-left: 9px;">
                 <li class="course">Machine Learning (<a href="https://courses.grainger.illinois.edu/cs446/sp2024/">CS446/ECE449</a>)</li>
                 <li class="course">Neural Network Modeling Lab (PSYC 489)</li>
+                <li class="course">Probability with Engr Applications (<a href="https://courses.engr.illinois.edu/ece313/fa2023/">ECE 313</a>)</li>
+                <li class="course">Linear Algebra (MATH 257)</li>
             </ul>
+        </div>
+        <div class="course-hidden">
+            <p>
+                These two threads are what I am currently working on, for which I have been longing since my 16, and are supposed to be stuck with me for a considerable long period. It's 
+            </p>
         </div>
     </div>
     <div class="courses">
-        <h2>Computer systems</h2>
+        <h2 class="course-title">Computer systems</h2>
         <ul>
             <li class="course">Computer Systems Engineering (<a href="https://courses.grainger.illinois.edu/ECE391/fa2023/toc.html">ECE 391</a>)</li>
             <li class="course">Data Structures (CS 225)</li>
@@ -51,9 +60,14 @@
             <li class="course">Introduction to Electronics (ECE 110)</li>
             <li class="course">Introduction to Computing: Engrg & Sci (CS 101)</li>
         </ul>
+        <div class="course-hidden">
+            <p>
+                This thread is exactly what my major is requiring me for, that is, understand modern computers as control systems. Since the very beginning of our Bachelor career, we have been taught from transistors to operating systems, and more importantly, how they are built and blended together as hardware and software.
+            </p>
+        </div>
     </div>
     <div class="courses">
-        <h2>Origins</h2>
+        <h2 class="course-title">Origins</h2>
         <ul>
             <li class="course">Early Modern Philosophy (PHIL 206)</li>
             <li class="course">Foundation of Economics (ECON 101)</li>
@@ -61,23 +75,39 @@
             <li class="course">Principles of Research (RHET 102)</li>
             <li class="course">Introduction to Rhetoric (RHET 101)</li>
         </ul>
+        <div class="course-hidden">
+            <p>
+                This is the most surprising while impacting line for me. I can confidently tell my mind a totally different one after taking early modern philosophy. With that, and all the effort I had put into understanding humanity, society, and knowledge before, I officially got on the path to understand all human conventions and acquaintance as a 
+                causal system. 
+            </p>
+        </div>
     </div>
     <div class="courses">
-        <h2>Pure Math tour</h2>
+        <h2 class="course-title">Pure Math tour</h2>
         <ul>
             <li class="course">Differential Equations (MATH 285)</li>
             <li class="course">Linear Algebra (MATH 257)</li>
-            <li class="course">Caculus III (MATH 241)</li>
+            <li class="course">Calculus III (MATH 241)</li>
         </ul>
+        <div class="course-hidden">
+            <p>
+                This is the thread from which the previous thread saved me.
+            </p>
+        </div>
     </div>
     <div class="courses">
-        <h2>Physics fundamentals</h2>
+        <h2 class="course-title">Physics fundamentals</h2>
         <ul>
             <li class="course">Thermal Physics (PHYS 213)</li>
             <li class="course">Quantum Physics (PHYS 214)</li>
             <li class="course">Elec & Mag (PHYS 212)</li>
             <li class="course">Mechanics (PHYS 211)</li>
         </ul>
+        <div class="course-hidden">
+            <p>
+                This is a path that I began looking forward to when I was 12, until I found myself limited in studying advanced physical topics when I just got in high school. Therefore, in the following year, I turned to exploring the reason why I was not ready  
+            </p>
+        </div>
     </div>
     <!-- <div class="courses">
         <h2>Rhetoric fundations</h2>
@@ -87,7 +117,27 @@
 <!-- <footer>
     <p>&copy; hahaha. </p>
 </footer> -->
-
 </body>
+
+<script>
+    // Get all menu items
+    var courses = document.querySelectorAll('.courses');
+
+    // Loop through each menu item
+    courses.forEach(function(item) {
+        // Add click event listener to each menu item
+        item.addEventListener('click', function() {
+            // Toggle display of sub-menu on click
+            var content = item.querySelector('.course-hidden');
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+            } else {
+                content.style.display = 'none';
+            }
+        });
+        // set not displaying to default
+        // item.querySelector('.course-hidden').style.display = 'none';
+    });
+</script>
 
 </html>
