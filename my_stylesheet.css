@@ -3,10 +3,34 @@ body {
     /* previous one: "Trebuchet MS" */
     margin: 0 auto;
     background-color: #f2f2f2;
+    font-size: 13.5pt;
+    line-height: 1.5;
+    letter-spacing: 0.45px;
 }
 ::selection {
-    background-color: #04080a;
+    background-color: black /* #04080a */;
     color: #f2f2f2;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    /* note that a:hover will not affect a.class */
+    /* what's more, color of h1 will cover the hover */
+    color: #ae7711;
+}
+p a {
+    color: #ae7711;
+}
+h1 { /* name and section titles on main page */
+    font-size: 22pt;
+    margin: 0;
+    letter-spacing: 0.4px;
+}
+h2 { /* "More" on main page*/
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 header{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -66,18 +90,7 @@ div.wrapper {
     /* a wrapper is not aligning to the center and limiting the width at the same time */
     padding: 0;
     margin-top: 29px;
-    max-width: 800px;
-} 
-a{
-    color: #04080a;
-}
-p {
-    font-size: 120%;
-    line-height: 1.5;
-    letter-spacing: 0.45px;
-}
-.me a {
-    color: #ae7711
+    max-width: 808px;
 }
 .me img {
     width: 400px;
@@ -86,10 +99,12 @@ p {
     float: left;
 }
 .me h1{
+    color: black;
     font-size: 33pt;
     margin: 0;
 }
 .me p{
+    color: #494949;
     margin: 0;
 }
 @media print, screen and (max-width: 653px) {
@@ -115,11 +130,11 @@ p {
     text-align: right;
     font-family: Georgia, Times, 'Times New Roman', serif;
     font-style: italic;
-    font-size: large;
+    font-size: 12pt;
     /* margin-top: 1.4%;
     margin-bottom: 3.6%; */
-    margin-top: 4.1px;
-    margin-bottom: 14px;
+    /* margin-top: 4.1px; */
+    margin-bottom: 9px;
     margin-right: 1.9%;
 }
 /*
@@ -127,29 +142,25 @@ img.icon{
     width: 32px;
 } */
 .main_page_section{
-    margin-top: 4%;
-    margin-bottom: 4%;
-}
-.main_page_section h1, h2, h3 {
-    letter-spacing: 0.4px;
-    font-size: xx-large;
-    margin-bottom: 1.4%;
+    margin-top: 2%;
 }
 .main_page_section p{
+    color: #494949;
     margin: 0;
 }
-.main_page_section a.section{
-    text-decoration: none;
+.more{
+    margin-top: 9%;
+    font-size: 13.5pt;
+    color: #494949;
 }
-.main_page_section a.section:hover{
-    /* note that a:hover will not affect a.class */
-    color: #ae7711;
+.more ul{
+    margin-top: 9px;
+    margin-bottom: 0;
 }
 .intro{
-    margin-bottom: 5.2%;
+    margin-bottom: 3.6%;
 }
 .intro p{
-    font-size: large;
     margin-top: 0;
     color: #494949;
 }
@@ -196,8 +207,11 @@ img.icon{
     font-style: italic;
 } */
 li.course{
-    font-size: large;
+    font-size: 12pt;
     line-height: 1.4;
+}
+li.course a{
+    color: #494949;
 }
 li.course a:hover{
     color: #ae7711;
@@ -228,10 +242,28 @@ li.course a:hover{
     margin-top: 0.9%;
     margin-bottom: 2.4%;
 }
+.project h2{
+    margin-bottom: 0;
+}
+.project .info{
+    font-style: italic;
+    font-size: 9pt;
+    color: #494949;
+    text-align: end;
+    margin: 0;
+}
+.project p{
+    color: #494949;
+    margin-top: 0;
+}
 footer {
     text-align: end;
     padding: 0px;
     margin-top: 9%;
-    font-family: Georgia, Times, 'Times New Roman', serif; 
+    margin: 4%;
+    font-family: Georgia, Times, 'Times New Roman', serif;
     /* position: fixed; */
+}
+footer p{
+    font-size: medium;
 }
