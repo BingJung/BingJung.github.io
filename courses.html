@@ -25,7 +25,7 @@
     <div class="intro">
         <h1>Course Work Threads</h1>
         <p>
-            Here I'm going to introduce courses that I have taken following several critical disciplines. I will also demonstrate how they inspired me with brand-new viewpoints to inspect the world, as well as how I feel about my participation in these courses. <span style="color: black;">Actually, blocks below are in descending order in which I have believed as paths for me towards the world's truest truth. Feel free to <b>click on the blocks to shrink or expand</b> them.</span>
+            Here I'm going to introduce courses that I have taken following several critical disciplines. I will also demonstrate how they inspired me with brand-new viewpoints to inspect the world, as well as how I feel about my participation in these courses. <span style="color: black;">Actually, blocks below are in descending order in which I have believed as paths for me towards the world's truest truth. Feel free to <b>click on titles to shrink or expand</b> the blocks! More for this section are still on their way.</span>
             <!-- awaits improvements... -->
         </p>
     </div>
@@ -143,19 +143,17 @@
 </body>
 
 <script>
-    // Get all menu items
-    var courses = document.querySelectorAll('.courses');
-
-    // Loop through each menu item
-    courses.forEach(function(item) {
-        // Add click event listener to each menu item
-        item.addEventListener('click', function() {
-            // Toggle display of sub-menu on click
-            var content = item.querySelector('.course-hidden');
-            if (content.style.display === 'none') {
-                content.style.display = 'block';
-            } else {
-                content.style.display = 'none';
+    document.querySelectorAll(".course-title").forEach(function(title) {
+        // if (block.target.classList.contains("course-title")) {
+            // const title = block.target
+        title.addEventListener("click", function() {
+            // var content = block.querySelector(".course-hidden");
+            var content = title.nextElementSibling.nextElementSibling
+            if (content.style.display === "none") {
+                content.style.display = "block";
+            }
+            else {
+                content.style.display = "none";
             }
         });
         // set not displaying to default
