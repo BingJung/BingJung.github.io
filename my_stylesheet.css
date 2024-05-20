@@ -92,6 +92,10 @@ div.wrapper {
     margin-top: 29px;
     max-width: 808px;
 }
+span.whisper {
+    font-size: small;
+    color: #494949;
+}
 .me img {
     width: 400px;
     max-width: 98%;
