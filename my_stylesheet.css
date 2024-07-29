@@ -8,7 +8,7 @@ body {
     letter-spacing: 0.45px;
 }
 ::selection {
-    background-color: black /* #04080a */;
+    background-color: black;
     color: #f2f2f2;
 }
 a{
@@ -34,7 +34,7 @@ h2 { /* "More" on main page*/
 }
 header{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #0e1a22;
+    background-color: #494949 /* #0e1a22 */;
     color: #f2f2f2;
     padding: 15px;
     padding-left: 5%;
@@ -75,10 +75,10 @@ nav li.main a{
     padding-top: 6px;
 }
 nav li.section a:hover{
-    background-color: #04080a;
+    background-color: #292929 /* #04080a */;
 }
 nav li.resume a:hover{
-    background-color: #04080a;
+    background-color: #292929 /* #04080a */;
 }
 main {
     padding-left: 5.2%;
