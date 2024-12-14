@@ -24,7 +24,7 @@
 <div class="wrapper">
     <div class="intro">
         <h1>Past Projects</h1>
-        <p>Here are the projects that I have worked on. Almost all of them were accomplished in cooperation with my wonderful classmates. Since most of them seem a bit weird now, this section will be updated slower.</p>
+        <p>Here are the projects that I have worked on. Almost all of them were accomplished in cooperation with my wonderful classmates. There will be more after I nail my finals in 24 Fall.</p>
     </div>
     <div class="project">
         <h2>A Unix-like Operating System</h2>
@@ -32,7 +32,7 @@
             Course Project, Fall 2023 (junior year)
         </div>
         <p>
-            It's gonna be sure that almost every one of us (who didn't fail the course) would have this project in resume as one of the biggest bosses from our courses, which marks almost an end for our journey from hardware to software. Basically in group of four, we spent half a semester on building the kernel of this mini multitask terminal-interactive x86-arch operating system. I was mainly responsible for building terminals and assembly linkages, which required sufficient familiarity with all features of our operating system, including interrupts, scheduling, virtual memory, and file system. From my perspective of view, an operating system could be all about synchronization and interaction, which were equally important when switching among multiple terminals. As supplementary components, we added support for command history, auto command completion, terminal color switch, and a mouse cursor right in our kernel. Frankly speaking these were likely to be just above normal, as there were some groups doing seriously marvelous jobs.</p>
+            This project marks almost an end of our journey from hardware to software. In group of four, we built the kernel of this mini multitask terminal-interactive x86 operating system. I was mainly responsible for building terminals and assembly linkages, which required sufficient familiarity with all features of our operating system, including interrupts, scheduling, virtual memory, and file system. From my perspective of view, an operating system could be all about synchronization and interaction, which were equally important when switching among multiple terminals. We also added support for command history, auto command completion, terminal color switch, and a mouse cursor in our kernel. Frankly speaking these were likely to be just above normal, as there were some groups doing seriously marvelous jobs.</p>
     </div>
     <div class="project">
         <h2>A LLM Augmented Data Cleaning Framework</h2>
@@ -40,9 +40,8 @@
             Summer Research Project, Summer 2023 (sophomore year)
         </div>
         <p>
-            When this project was handed us, it was just a few keywords, and we were just with a few blank minds. We got familiar with some data error detecting and correlation methods in the first week, yet none of us had experience with any language models. After the first discussion (or the second), the other two group members went on their journey on building a data cleaning pipeline in classic style, while I set off for blending the LLM or pre-trained LMs with the pipeline. <br>
-            <br>In the following week, I finished my exploration from RNNs to transformer from scratch and started to seriously consider on the two papers that mentors offered us. One was a data representation method utilizing contrastive pretraining and transformer-based structure, and the other was an experiment that succeeded on predicting time-series data with semi-frozen GPT-2 parameters. To be honest I really wished to do something fancier at first, but both time and resources was rather limited then. Hence, after getting familiar with the codes, what I did was just basically plugging the BERT parameters in the representation framework for tabular data, and praying for a better performance on representing dirty data. <br><br>
-            Then I did quite a number of experiments on data with different features and different frozen conditions. It was found that the finetuning merely on norm layers barely changed anything with our training setting, and the full parameter fine-tuning appeared easy to overfit on most datasets, which were limited either in features or in samples. Fortunately we did find something seemed better, when applied this approach on samples with sufficiently large amount of both features (50~200) and samples. The reason why it only "seemed" so was that the finetuning on those data took incredibly long on single A40, and there was barely any more time to test on the original model with same or larger amount of parameters. Thus, we just left the job to explain these things in our report and headed for our new semester which was rather vital and challenging.
+            When this project was handed us, it was just a few keywords, and we were just with a few blank minds. After our exploration from RNNs to Transformer, we were offered two papers by the mentors, one of which introduced a Transformer model representing heterogenous tabular data while the other displayed success on predicting time-series data with parameters of GPT2. To be honest I really wished to do something fancier at first, but both time and resources was rather limited. Hence, after getting familiar with the codes, what I did was simply plugging the BERT parameters in the former work and praying for a better performance on representing dirty data. <br><br>
+            Then I did a number of experiments under different frozen conditions. Finetuning on norm layers barely changed anything, while finetuning full parameteres appeared easily overfitting on most data that were limited in features or size. Fortunately the results did seem better when applied on datasets with sufficiently large amount of features (50~200) and samples. The reason why it only "seemed" so was that the finetuning took incredibly long on a single A40 and there was no time left for the comparison tests on the original model with same or larger amount of parameters. Thus, we just left the job as explanations in our report and headed for our new semester which was rather vital and challenging.
         </p>
     </div>
     <div class="project">
@@ -57,7 +56,7 @@
             Course Project, Fall 2021 (freshman year)
         </div>
         <p>
-            This is a car that marches following a black path on its own, keeping a distance from obstacles in front of it utilizing an ultrasonic sensor. Where we were quite proud of it was that instead of relying on programmed Arduino, such functions were realized with logic circuits merely consisting of diodes, resistors, and MOSFETs. We made the car processed signals and applied control completely at hardware level. It was said that we were the only group achieving so.
+            This is the project that brought my aspiration. The car follows a black path on its own and uses an ultrasonic sensor to keep a distance from obstacles. Where we were quite proud of it was rather than relying on programmed Arduino, we realized such functions with logic circuits built with diodes, resistors, capcitors, MOSFETs, and some other simple elements. We made the car processed signals and applied control with a mixture of digital & analog signals, and it was said that we were the only group achieving so. I hope I can do the same thing to the development of AI.
         </p>
     </div>
 </div>
